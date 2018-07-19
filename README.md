@@ -13,7 +13,12 @@ https://github.com/MatthiasLiszt/FSWD40-CodeReview11
 make free you have XAMPP installed and running and Symfony 3.4 ...
 
 create a new Symfony 3.4 project and then replace the directories 
-with mine. 
+with mine.
+
+The create the database and fill it with some tables.
+
+<code>php bin/console doctrine:database:create</code>
+<code>php bin/console doctrine:schema:update --force </code> 
 
 Then start the application with 
 
