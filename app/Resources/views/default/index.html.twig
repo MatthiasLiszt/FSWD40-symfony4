@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<nav><div>
+     <button id="login" >Login</button>
+     <button id="logout" onclick="location.reload()">LogOut</button>
+     <button id="register">Register</button>
+     <button id="showCars">our Cars</button>
+     <button id="showOffices">our Offices</button>
+     <select id="officeSelect"><option value="0">---</option></select>
+     <button id="adminReport">AdminReport</button>
+     <button id="gpsTracking">GPS-Tracking</button>
+     </div>
+</nav>
+<div id="phpsite"></div>
+<script src="{{ asset('/js/carrental.js') }}"></script>
+{% endblock %}
