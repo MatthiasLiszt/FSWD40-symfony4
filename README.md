@@ -17,8 +17,8 @@ with mine.
 
 The create the database and fill it with some tables.
 
-<code>php bin/console doctrine:database:create</code>
-<code>php bin/console doctrine:schema:update --force </code> 
+<p><code>php bin/console doctrine:database:create</code></p>
+<p><code>php bin/console doctrine:schema:update --force </code></p> 
 
 Then start the application with 
 
