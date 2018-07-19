@@ -39,7 +39,7 @@ $('#officeSelect').change(function(){var location=$('#officeSelect').val();
                                      $("#phpsite").show();
                                     });
 
-$('#register').click(function(){var iframe=`<iframe src="register.php">`;
+$('#register').click(function(){var iframe=`<iframe src="/register">`;
                                    
                      $("#phpsite").html(iframe);
                      $("#phpsite").show();
