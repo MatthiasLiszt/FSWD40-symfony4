@@ -61,7 +61,7 @@ $('#gpsTracking').click(function(){//alert(GpsTracking);
 function doLogCheck(){
  var password=$('#password').val();
  //alert(password);
- $.post("login.php",{"username": $('#username').val(), "password": password},function(data){doLogin(data)});
+ $.post("/login",{"username": $('#username').val(), "password": password},function(data){doLogin(data)});
 }
 
 function doLogin(data){
@@ -87,6 +87,10 @@ function doLogin(data){
      var message="<span color='red'><h1>You have now special administrator rights !!!</h1></span>";
      $('#phpsite').html(message); 
     }
+  }
+ else
+  {alert('something went wrong');
+   $("#phpsite").text("UserName or Password are not known");
   }
 }
 
